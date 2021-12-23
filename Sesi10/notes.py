@@ -138,13 +138,7 @@ def delete(person_id, note_id):
     :param note_id:     Id of the note to delete
     :return:            200 on successful delete, 404 if not found
     """
-    # Get the note requested
-    # note = (
-    #     Note.query.filter(Note.person_id == person_id)
-    #     .filter(Note.note_id == note_id)
-    #     .one_or_none()
-    # )
-
+    
     note = (
         Note.query.filter(Note.person_id == person_id)
         .filter(Note.note_id == note_id)
