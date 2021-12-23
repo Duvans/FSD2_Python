@@ -92,8 +92,15 @@ def update(person_id, note_id, note):
     :param content:            The JSON containing the note data
     :return:                200 on success
     """
+
+    # update_note = (
+    #     Note.query.filter(Person.person_id == person_id)
+    #     .filter(Note.note_id == note_id)
+    #     .one_or_none()
+    # )
+
     update_note = (
-        Note.query.filter(Person.person_id == person_id)
+        Note.query.filter(Note.person_id == person_id)
         .filter(Note.note_id == note_id)
         .one_or_none()
     )
@@ -132,8 +139,14 @@ def delete(person_id, note_id):
     :return:            200 on successful delete, 404 if not found
     """
     # Get the note requested
+    # note = (
+    #     Note.query.filter(Note.person_id == person_id)
+    #     .filter(Note.note_id == note_id)
+    #     .one_or_none()
+    # )
+
     note = (
-        Note.query.filter(Person.person_id == person_id)
+        Note.query.filter(Note.person_id == person_id)
         .filter(Note.note_id == note_id)
         .one_or_none()
     )
