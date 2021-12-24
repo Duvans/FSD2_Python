@@ -1,4 +1,4 @@
-URL DEPLOYMENT : https://h8ocbc-deployment-020.herokuapp.com/
+URL DEPLOYMENT : http://h8ocbc-deployment-020.herokuapp.com/
 URL API        : https://h8ocbc-deployment-020.herokuapp.com/api/ui/
 
 GITHUB ASSIGNMENT 3 : https://github.com/Duvans/FSD2_Python/tree/main/Assignment3
