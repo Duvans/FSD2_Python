@@ -1,0 +1,3 @@
+http://pythondeployment-020.herokuapp.com
+
+http://pythondeployment-020.herokuapp.com/api/ui/
